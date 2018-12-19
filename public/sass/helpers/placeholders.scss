@@ -1,0 +1,27 @@
+/* search form search box placeholder*/
+.search-Placeholder::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $textColor;
+}
+.search-Placeholder::-moz-placeholder { /* Firefox 19+ */
+  color: $textColor;
+}
+.search-Placeholder:-ms-input-placeholder { /* IE 10+ */
+  color: $textColor;
+}
+.search-Placeholder:-moz-placeholder { /* Firefox 18- */
+  color: $textColor;
+}
+
+/* search form placeholder*/
+.search-input-Placeholder::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $darkGray;
+}
+.search-input-Placeholder::-moz-placeholder { /* Firefox 19+ */
+  color: $darkGray;
+}
+.search-input-Placeholder:-ms-input-placeholder { /* IE 10+ */
+  color: $darkGray;
+}
+.search-input-Placeholder:-moz-placeholder { /* Firefox 18- */
+  color: $darkGray;
+}

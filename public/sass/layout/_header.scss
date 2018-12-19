@@ -1,0 +1,71 @@
+html {
+    font-size: $size-md;
+}
+body {
+    font-size: $size-sm;
+    color: $textColor;
+    font-weight: $font-weight-normal;
+}
+header {
+    background: $textLight url('../images/web_homepage.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.site-header {
+    border-bottom: $size-xxxs solid $footerborderColor;
+    background-color: $stickyHeaderBg;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    + section {
+        padding-top: $size-xl * 3;
+    }
+}
+
+/* Logo */
+.site-logo {
+    font-size: $size-lg;
+    color: $textLight;
+    font-weight: $font-weight-bold;
+    &:hover {
+        color: $textLight;
+    }
+}
+/* Navigation */
+.navbar {
+    padding: 0;    
+}
+.navbar-nav {
+    .nav-link {
+        font-size: $size-sm;            
+        color: $textLight;
+        font-weight: $font-weight-bold;
+        &:hover {
+            background-color: $brandColor;
+        }
+    }
+    .active {
+        .nav-link {
+            background-color: $brandColor;
+        }
+    }
+}
+/* Header links */
+.top-links {
+    li {
+        a {
+            font-size: $size-sm;
+            color: $textLight;
+        }
+       
+    }
+}
+
+/* remove outline for button */
+button {
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,17 @@
+@import 'helpers/variables';
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/slick-carousel/slick/slick';
+
+/*vendor css*/
+@import 'vendor/icon';
+
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+
+@import 'layout/responsive';

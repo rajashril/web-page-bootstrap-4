@@ -1,0 +1,204 @@
+/* home top section */
+.home-first-section {
+    color: $textLight;
+    .sub-text {
+        font-size: $size-md;
+    }
+    h1 {
+        font-size: $size-xl + $size-md;
+    }
+}
+.home-second-section {
+    min-height: $size-xl * 10;
+    .search-form {
+        background-color: $backgroundColor;
+        color: $darkGray;
+        border-radius: $size-xs;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) , 0 0 14px rgba(0, 0, 0, 0.1) ;        
+        position: relative;
+        input {
+            background-color: $lightGray;
+            color: $sliderTextColor;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        button {
+            width: $size-md * 9 + $size-sm;
+        }
+        &:before {
+            content: "";
+            // box-shadow: inset 0 0px 5px -2px rgba(0, 0, 0, 0.7);
+            width: 60%;
+            position: absolute;
+            height: 1%;
+            top: 0;
+            left: 20%;
+            right: 20%;
+        }
+    }
+    .icon-cloud {
+        font-size: $size-lg;
+        color: $cloudColor;
+    }
+    .search-box {
+        input {
+            padding: $size-xs $size-sm;
+            height: auto;
+            border-radius: $size-lg;
+            font-size: $size-md;
+            font-weight: $font-weight-bold;
+            color: $textColor;
+            border: none;
+        }
+        .hotel-search-btn {
+            background-color: $micBgColor;
+            color: $textLight;
+            right: $size-xxs;
+            top: $size-xxxs * 3; 
+            padding: $size-xxxs ( $size-xxxs + $size-xxs );
+            font-size: $size-xl;
+            cursor: pointer;            
+        }   
+    }
+    .icon-calendar {
+        right: $size-xl;
+        font-size: $size-md;
+        top: $size-sm;
+        color: $brandColor;
+        cursor: pointer;
+    }   
+    .curvedBorder {
+        input {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    } 
+}
+.curvedBorder {
+    .light-curve {
+        &:after {
+            content: "";
+            width: $size-xl;
+            height: $size-xl;
+            position: absolute;
+            border: 6px solid #fff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            transform: rotate(150deg);
+            right: (-$size-md) - ($size-xxxs * 2);
+            bottom: -$size-xxs - $size-xxxs;
+        }
+        &:before {
+            content: "";
+            width: $size-xl;
+            height: $size-xl;
+            position: absolute;
+            border: 6px solid #fff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            transform: rotate(-110deg);
+            left: (-$size-md) - ($size-xxxs * 2);
+            bottom: -$size-xxs - $size-xxxs;
+        }
+    }
+}
+/*exclusive deals*/
+.exclusive-deals {
+    background-color: $textLight;
+    padding: $size-md;
+    border: $size-xxxs solid $grayColor;
+    li {
+        &:first-child {
+            flex: 0 0 50%;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    .exclusive-deals-title {
+        font-size: $size-md;
+    }
+    .exclusive-deals-discount {
+        font-size: $size-xs;
+        color: $grayColor;
+        margin-top: $size-xs;
+        align-self: flex-end;
+        flex: 0 0 100%;
+    }
+}
+
+/* Popular destination */
+.shadow-box {
+    box-shadow: 0 $size-xs $size-md 0 rgba(0,0,0,0.2),0 $size-xxs $size-lg 0 rgba(0,0,0,0.19);
+    position: relative;    
+}
+.brand-color {
+    color: $brandColor;
+}
+.gray-color {
+    color: $grayColor;
+}
+.dark-color {
+    color: $sliderTextColor;
+}
+.popular-destination {
+    .slick-slide {
+        margin: 0 $size-xxs * 3;
+        height: auto;
+        &:focus {
+            outline: none;
+        }
+    }
+    img {
+        width: 100%;        
+        transition: height 0.5s ease-out;   
+        + div {
+            transition: height 0.5s ease-in;
+        }
+    }
+}
+/* Testimonial */
+.testimonial-container {
+    background: url('../images/testimonials.png') no-repeat;
+    background-size: 100% ($size-md * 45);
+    background-position: 0rem (-$size-md * 13);
+    .slick-slider {
+        background-color: $backgroundColor;
+        color: $sliderTextColor;
+        font-size: $size-md;
+        padding: $size-xl+2 $size-xl+4 $size-xl+1;
+        @extend .shadow-box;
+        &:before {
+            content: "\e977";
+            font-family: $icon-font-family;
+            position: absolute;
+            font-size: $size-lg * 2;
+            left: $size-xl +1 ;
+            top: $size-xl + 1;
+            color: $grayColor;
+        }
+        .slick-slide {
+            height: auto;
+        }
+        .slick-arrow {
+            color: $brandColor;
+            font-size: $size-xl;
+            padding: $size-xxxs ( $size-xxxs + $size-xxs );
+            background-color: $lightGray;
+            top: 40%;
+            cursor: pointer;
+        }
+        .slick-next {
+            right: -($size-xl+2);
+        }
+        .slick-prev {
+            left: -($size-xl+2);
+        }       
+    }
+}

@@ -1,0 +1,46 @@
+/*color variables*/
+$brandColor : #8c1e77;
+$textColor : #0a2f64;
+
+/*Text colors*/
+$textLight : #ffffff;
+$lightGray: #e0e0de;
+$grayColor: #a3a3a3;
+$darkGray: #1f2935;
+$greenColor: #004437;
+$sliderTextColor: #000000;
+$copyRightTextColor: #90a1b1;
+$cloudColor: #0b95d6;
+$micBgColor: #30939e;
+$footerborderColor: #3a4d5e;
+$overlayColor: rgba(10, 47, 100,0.8);
+$stickyHeaderBg: rgba(9, 22, 64,0.9);
+
+/*input bg color*/
+$formInputBgColor: #eeeeee;
+
+/* bg color */
+$backgroundColor: #ffffff;
+$footerBgColor: #141b25;
+
+/* font sizes*/
+$size-xxxs: 0.0625rem; /* 1px */
+$size-xxs: 0.3125rem; /* 5px */
+$size-xs: 0.625rem; /* 10px */
+$size-sm: 0.75rem; /* 12px */
+$size-md: 1rem; /* 16px */
+$size-lg: 1.25rem; /* 20px */
+$size-xl: 1.5625rem; /* 25px */
+
+/* Icom font family */
+$icon-font-family: 'airline';
+
+/*bootstrap variables*/
+$primary: $brandColor;
+$secondary: $textColor;
+
+$body-bg: $backgroundColor;
+$body-color:  $textColor;
+
+$link-color: $brandColor;
+$link-hover-color: $brandColor;
